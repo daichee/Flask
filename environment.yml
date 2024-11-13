@@ -1,0 +1,18 @@
+name: flask-dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - flask=3.0.0
+  - flask-sqlalchemy=3.1.1
+  - psycopg2=2.9.9
+  - python-dotenv=1.0.0
+  - pip
+  - ipython  # 対話的な開発用
+  - jupyter  # ノートブック用
+  - black    # コードフォーマッター
+  - flake8   # リンター
+  - pytest   # テスト用
+  - pip:      # conda-forgeにないパッケージはpipでインストール
+    - flask-debugtoolbar  # デバッグツール
